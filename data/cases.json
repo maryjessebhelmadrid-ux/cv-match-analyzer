@@ -1,0 +1,27 @@
+{
+  "cvs": {
+    "C1": "Computer Engineer graduate. Projects: Trained a YOLOv8 model to automate adulterant detection in black pepper (ML), complete with evaluation. Used Flask to create and deploy an AI application that detects emotions. Made a Science laboratory management system incorporated with SQLite and Python Tkinter.",
+    "C2": "Software Engineer graduate. Projects: Made a CV match analyzer using large language model (LLM). Proficient with python and REST API for web scraping. Used Git/GitHub for version control.",
+    "C3": "Computer Engineer graduate. Projects: Built a two-microcontroller system: an Arduino Uno reads a DHT11 sensor and sends the data over a UART serial link to an ESP8266, which publishes it to a Blynk cloud dashboard. Wired the circuit (sensor with pull-up resistor, serial connection between boards) and programmed both boards in C++ using the Arduino IDE. Verified live temperature and humidity readings on the Blynk dashboard.",
+    "C4": "Hospitality Management graduate. Projects: Created a promotional campaign for every tourist spot in Albay."
+  },
+  "jobs": {
+    "J1": "An Applied AI Engineer graduate. Required Skills: Large language models (LLMs), ML and Deep Learning, proficient in Python, REST API, SQL, evaluation and version control. Preferably made a project using LLMs.",
+    "J2": "Backend Engineer. Required Skills: Proficiency in Flask, SQL, deployments, and docker containerization. Can write clean, reliable code using any programming language such as Python, Java, C#, or Node.js.",
+    "J3": "Embedded Systems Engineer. Required Skills: Proficiency in C and C++, hands-on experience with microcontrollers and OS, familiar with communication protocols such as UART, SPI, I2C, CAN or Wi-Fi to connect components."
+  },
+  "pairs": [
+    {"cv": "C1", "job": "J1", "band": "mid", "must_match": ["python", "ml", "sql"], "must_miss": ["llm"]},
+    {"cv": "C1", "job": "J2", "band": "mid", "must_match": ["flask", "sql"], "must_miss": ["docker"]},
+    {"cv": "C1", "job": "J3", "band": "low", "must_match": [], "must_miss": ["uart", "spi"]},
+    {"cv": "C2", "job": "J1", "band": "mid", "must_match": ["python", "llm"], "must_miss": ["sql"]},
+    {"cv": "C2", "job": "J2", "band": "mid", "must_match": ["python"], "must_miss": ["flask", "sql", "docker"]},
+    {"cv": "C2", "job": "J3", "band": "low", "must_match": [], "must_miss": ["i2c", "uart"]},
+    {"cv": "C3", "job": "J1", "band": "low", "must_match": [], "must_miss": ["llm", "sql"]},
+    {"cv": "C3", "job": "J2", "band": "low", "must_match": [], "must_miss": ["flask", "sql", "docker"]},
+    {"cv": "C3", "job": "J3", "band": "high", "must_match": ["uart", "microcontroller", "c++"], "must_miss": []},
+    {"cv": "C4", "job": "J1", "band": "low", "must_match": [], "must_miss": ["llm", "python"]},
+    {"cv": "C4", "job": "J2", "band": "low", "must_match": [], "must_miss": ["docker", "sql"]},
+    {"cv": "C4", "job": "J3", "band": "low", "must_match": [], "must_miss": ["uart", "c++"]}
+  ]
+}
