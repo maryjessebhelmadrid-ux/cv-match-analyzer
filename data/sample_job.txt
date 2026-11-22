@@ -1,0 +1,2 @@
+Graduate Applied AI Engineer
+You will build and evaluate LLM-powered feature. Requirements: strong Python, experience with REST APIs, familiarity with LLMs or prompt engineering, ability to write evaluation script, Docker and cloud basics are a plus.
