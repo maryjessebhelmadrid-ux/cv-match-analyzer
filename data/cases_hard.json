@@ -1,0 +1,14 @@
+{
+  "cvs": {
+    "H1": "Computer Engineering graduate. Currently learning Python through an online course and has not built any projects with it yet. Projects: Built a line-following robot using Arduino C++.",
+    "H2": "Backend Engineering graduate. Projects: Built a REST service in Python using FastAPI and PostgreSQL, and containerized it with Docker."
+  },
+  "jobs": {
+    "HJ1": "Applied AI Engineer. Required: Python, experience with large language models (LLMs), REST APIs, and writing evaluation scripts.",
+    "HJ2": "Backend Engineer. Required: Python, SQL, REST APIs, and Docker."
+  },
+  "pairs": [
+    {"cv": "H1", "job": "HJ1", "band": "low", "must_match": [], "must_miss": ["python", ["large language model", "llm"]], "note": "NEGATION: CV says it has not built anything in Python yet, so Python must count as missing."},
+    {"cv": "H2", "job": "HJ2", "band": "high", "must_match": ["python", "docker", ["sql", "postgres"]], "must_miss": [], "note": "SYNONYM: PostgreSQL should count as SQL. Covers all four requirements."}
+  ]
+}

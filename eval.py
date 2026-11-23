@@ -87,9 +87,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", default=DEFAULT_MODEL)
     parser.add_argument("--runs", type=int, default=3)
+    parser.add_argument("--cases", default="data/cases.json")
     args = parser.parse_args()
 
-    cases = json.load(open("data/cases.json", encoding="utf-8"))
+    cases = json.load(open(args.cases, encoding="utf-8"))
     cache = load_cache()
 
     total_runs = 0
@@ -143,7 +144,8 @@ def main():
         print(f"{k:<18}{v}")
 
     os.makedirs("results", exist_ok=True)
-    out_path = f"results/{args.model}.json"
+    set_name = os.path.splitext(os.path.basename(args.cases))[0]
+    out_path = f"results/{args.model}_{set_name}.json"
     json.dump(summary, open(out_path, "w", encoding="utf-8"), indent=2)
     print(f"\nSaved {out_path}")
 
