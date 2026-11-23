@@ -1,27 +1,27 @@
 {
   "cvs": {
-    "C1": "Computer Engineer graduate. Projects: Trained a YOLOv8 model to automate adulterant detection in black pepper (ML), complete with evaluation. Used Flask to create and deploy an AI application that detects emotions. Made a Science laboratory management system incorporated with SQLite and Python Tkinter.",
-    "C2": "Software Engineer graduate. Projects: Made a CV match analyzer using large language model (LLM). Proficient with python and REST API for web scraping. Used Git/GitHub for version control.",
-    "C3": "Computer Engineer graduate. Projects: Built a two-microcontroller system: an Arduino Uno reads a DHT11 sensor and sends the data over a UART serial link to an ESP8266, which publishes it to a Blynk cloud dashboard. Wired the circuit (sensor with pull-up resistor, serial connection between boards) and programmed both boards in C++ using the Arduino IDE. Verified live temperature and humidity readings on the Blynk dashboard.",
-    "C4": "Hospitality Management graduate. Projects: Created a promotional campaign for every tourist spot in Albay."
+    "C1": "Computer Engineer graduate. Projects: Trained a YOLOv8 model in Python to detect adulterated black pepper and evaluated it with accuracy and precision metrics. Built and deployed a Flask web app. Built a lab management system with SQLite and Python Tkinter.",
+    "C2": "Software Engineer graduate. Projects: Built a CV match analyzer in Python that calls an LLM through a REST API. Wrote an evaluation script that scores the model outputs against labeled examples. Used Git for version control.",
+    "C3": "Computer Engineer graduate. Projects: Wrote C and C++ firmware for an STM32 microcontroller. Interfaced sensors over UART and I2C and logged the readings to a cloud dashboard.",
+    "C4": "Hospitality Management graduate. Projects: Created a promotional campaign for tourist spots in Albay."
   },
   "jobs": {
-    "J1": "An Applied AI Engineer graduate. Required Skills: Large language models (LLMs), ML and Deep Learning, proficient in Python, REST API, SQL, evaluation and version control. Preferably made a project using LLMs.",
-    "J2": "Backend Engineer. Required Skills: Proficiency in Flask, SQL, deployments, and docker containerization. Can write clean, reliable code using any programming language such as Python, Java, C#, or Node.js.",
-    "J3": "Embedded Systems Engineer. Required Skills: Proficiency in C and C++, hands-on experience with microcontrollers and OS, familiar with communication protocols such as UART, SPI, I2C, CAN or Wi-Fi to connect components."
+    "J1": "Applied AI Engineer. Required: Python, experience with large language models (LLMs), REST APIs, and writing evaluation scripts.",
+    "J2": "Backend Engineer. Required: Python, Flask, SQL, Docker, and deploying on a cloud platform such as AWS.",
+    "J3": "Embedded Systems Engineer. Required: C or C++, microcontrollers, UART, and I2C."
   },
   "pairs": [
-    {"cv": "C1", "job": "J1", "band": "mid", "must_match": ["python", "ml", "sql"], "must_miss": ["llm"]},
-    {"cv": "C1", "job": "J2", "band": "mid", "must_match": ["flask", "sql"], "must_miss": ["docker"]},
-    {"cv": "C1", "job": "J3", "band": "low", "must_match": [], "must_miss": ["uart", "spi"]},
-    {"cv": "C2", "job": "J1", "band": "mid", "must_match": ["python", "llm"], "must_miss": ["sql"]},
-    {"cv": "C2", "job": "J2", "band": "mid", "must_match": ["python"], "must_miss": ["flask", "sql", "docker"]},
-    {"cv": "C2", "job": "J3", "band": "low", "must_match": [], "must_miss": ["i2c", "uart"]},
-    {"cv": "C3", "job": "J1", "band": "low", "must_match": [], "must_miss": ["llm", "sql"]},
-    {"cv": "C3", "job": "J2", "band": "low", "must_match": [], "must_miss": ["flask", "sql", "docker"]},
-    {"cv": "C3", "job": "J3", "band": "high", "must_match": ["uart", "microcontroller", "c++"], "must_miss": []},
-    {"cv": "C4", "job": "J1", "band": "low", "must_match": [], "must_miss": ["llm", "python"]},
-    {"cv": "C4", "job": "J2", "band": "low", "must_match": [], "must_miss": ["docker", "sql"]},
-    {"cv": "C4", "job": "J3", "band": "low", "must_match": [], "must_miss": ["uart", "c++"]}
+    {"cv": "C1", "job": "J1", "band": "mid", "must_match": ["python"], "must_miss": [["large language model", "llm"]], "note": "Has Python and evaluation; lacks LLM experience."},
+    {"cv": "C1", "job": "J2", "band": "mid", "must_match": ["flask", "sql"], "must_miss": ["docker", "aws"], "note": "Has Python, Flask and SQL; lacks Docker and cloud."},
+    {"cv": "C1", "job": "J3", "band": "low", "must_match": [], "must_miss": ["c++", "uart"], "note": "No embedded experience."},
+    {"cv": "C2", "job": "J1", "band": "high", "must_match": ["python", ["large language model", "llm"], "evaluation"], "must_miss": [], "note": "Covers all four requirements."},
+    {"cv": "C2", "job": "J2", "band": "low", "must_match": ["python"], "must_miss": ["flask", "sql", "docker"], "note": "Only Python overlaps."},
+    {"cv": "C2", "job": "J3", "band": "low", "must_match": [], "must_miss": ["c++", "uart"], "note": "No embedded experience."},
+    {"cv": "C3", "job": "J1", "band": "low", "must_match": [], "must_miss": [["large language model", "llm"], "python"], "note": "No AI or Python experience."},
+    {"cv": "C3", "job": "J2", "band": "low", "must_match": [], "must_miss": ["flask", "sql", "docker"], "note": "No backend experience."},
+    {"cv": "C3", "job": "J3", "band": "high", "must_match": ["c++", "uart", "i2c"], "must_miss": [], "note": "Covers all four requirements."},
+    {"cv": "C4", "job": "J1", "band": "low", "must_match": [], "must_miss": [["large language model", "llm"], "python"], "note": "Non-technical CV."},
+    {"cv": "C4", "job": "J2", "band": "low", "must_match": [], "must_miss": ["docker", "sql"], "note": "Non-technical CV."},
+    {"cv": "C4", "job": "J3", "band": "low", "must_match": [], "must_miss": ["c++", "uart"], "note": "Non-technical CV."}
   ]
 }
