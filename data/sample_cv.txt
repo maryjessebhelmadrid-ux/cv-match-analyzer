@@ -1,3 +1,3 @@
-Mary Jessebhel S. Madrid - Computer Engineering graduate
+Alex Reyes - Computer Engineering graduate
 Projects: Built a Flask REST API with SQLite for a lab inventory system. Trained a YOLOv8 model on a Raspberry Pi 5 for image classification. Wrote python scripts to scrape and clean data with pandas.
 Skills: Python, Flask, SQL, Git, Linux basics.
