@@ -1,14 +1,26 @@
 {
   "cvs": {
     "H1": "Computer Engineering graduate. Currently learning Python through an online course and has not built any projects with it yet. Projects: Built a line-following robot using Arduino C++.",
-    "H2": "Backend Engineering graduate. Projects: Built a REST service in Python using FastAPI and PostgreSQL, and containerized it with Docker."
+    "H2": "Backend Engineering graduate. Projects: Built a REST service in Python using FastAPI and PostgreSQL, and containerized it with Docker.",
+    "H3": "Embedded Systems Engineer. Project: Embedded Linux IoT Gateway. Pairs STM32 to collect sensor data over UART with a Linux board (Raspberry Pi) that parses JSON, publishes via MQTT, and runs as a systemd service with automated tests.",
+    "H4": "Certified Software Engineer. Experience: Hands-on production experience with AWS, with strong proficiency in Docker, experienced with Terraform, and proficient with Linux and shell scripting.",
+    "H5": "IT graduate. Experienced in Cisco Packet Tracer with strong fundamental knowledge of networking. Proficient in network configuration and has strong knowledge of communication protocols. Assembled and installed an operating system on an office computer. Experienced in troubleshooting access points.",
+    "H6": "Electronics and Communication Engineer. Proficient with handling analog and digital electronics. Has hands-on experience with microcontrollers, integrated circuits, and analog and digital communications."
   },
   "jobs": {
     "HJ1": "Applied AI Engineer. Required: Python, experience with large language models (LLMs), REST APIs, and writing evaluation scripts.",
-    "HJ2": "Backend Engineer. Required: Python, SQL, REST APIs, and Docker."
+    "HJ2": "Backend Engineer. Required: Python, SQL, REST APIs, and Docker.",
+    "HJ3": "Embedded Systems Engineer. Required: RTOS, embedded Linux, and communication protocols like I2C, SPI and UART.",
+    "HJ4": "DevOps Engineer. Required: CI/CD pipelines, Terraform, AWS, and Grafana.",
+    "HJ5": "IT Assistant. Required: Knowledge of basic communication protocols: HTTP/HTTPS, SMTP, FTP, DNS, TCP, Ethernet, and Wi-Fi. Network configuration, installation of access points, installation of operating systems, and troubleshooting. Cisco Packet Tracer.",
+    "HJ6": "IT Sales Associate. Required: Procurement of ITB and RFQ, Excel proficiency, knowledge of IT equipment, and willingness to visit client sites."
   },
   "pairs": [
     {"cv": "H1", "job": "HJ1", "band": "low", "must_match": [], "must_miss": ["python", ["large language model", "llm"]], "note": "NEGATION: CV says it has not built anything in Python yet, so Python must count as missing."},
-    {"cv": "H2", "job": "HJ2", "band": "high", "must_match": ["python", "docker", ["sql", "postgres"]], "must_miss": [], "note": "SYNONYM: PostgreSQL should count as SQL. Covers all four requirements."}
+    {"cv": "H2", "job": "HJ2", "band": "high", "must_match": ["python", "docker", ["sql", "postgres"]], "must_miss": [], "note": "SYNONYM: PostgreSQL should count as SQL. Covers all four requirements."},
+    {"cv": "H3", "job": "HJ3", "band": "mid", "must_match": ["embedded linux", "uart"], "must_miss": ["rtos", "i2c", "spi"], "note": "IMPRESSIVE BUT MISMATCHED: advanced project, but covers only embedded Linux and UART out of five requirements."},
+    {"cv": "H4", "job": "HJ4", "band": "mid", "must_match": ["aws", "terraform"], "must_miss": ["ci/cd", "grafana"], "note": "PARTIAL COVERAGE: covers AWS and Terraform; CI/CD and Grafana are missing."},
+    {"cv": "H5", "job": "HJ5", "band": "high", "must_match": ["packet tracer", "access point", ["operating system", "os installation"]], "must_miss": [], "note": "JUDGMENT CALL: covers Packet Tracer, network configuration, OS installation and access-point troubleshooting; the specific protocols are claimed only generically. Arguable high/mid."},
+    {"cv": "H6", "job": "HJ6", "band": "low", "must_match": [], "must_miss": [["itb", "invitation to bid"], ["rfq", "request for quotation"], "excel"], "note": "UNRELATED FIELD: electronics CV against a sales job; no overlap with the requirements."}
   ]
 }

@@ -2,9 +2,9 @@
   "model": "claude-haiku-5-5",
   "runs_per_pair": 3,
   "validity_rate": 1.0,
-  "band_agreement": 1.0,
+  "band_agreement": 0.8333333333333334,
   "skill_recall": 1.0,
   "gap_recall": 1.0,
   "faithfulness": 1.0,
-  "mean_score_stdev": 1.414213562373095
+  "mean_score_stdev": 2.926305230590303
 }
