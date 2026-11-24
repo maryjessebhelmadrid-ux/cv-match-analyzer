@@ -20,7 +20,7 @@
     {"cv": "H2", "job": "HJ2", "band": "high", "must_match": ["python", "docker", ["sql", "postgres"]], "must_miss": [], "note": "SYNONYM: PostgreSQL should count as SQL. Covers all four requirements."},
     {"cv": "H3", "job": "HJ3", "band": "mid", "must_match": ["embedded linux", "uart"], "must_miss": ["rtos", "i2c", "spi"], "note": "IMPRESSIVE BUT MISMATCHED: advanced project, but covers only embedded Linux and UART out of five requirements."},
     {"cv": "H4", "job": "HJ4", "band": "mid", "must_match": ["aws", "terraform"], "must_miss": ["ci/cd", "grafana"], "note": "PARTIAL COVERAGE: covers AWS and Terraform; CI/CD and Grafana are missing."},
-    {"cv": "H5", "job": "HJ5", "band": "high", "must_match": ["packet tracer", "access point", ["operating system", "os installation"]], "must_miss": [], "note": "JUDGMENT CALL: covers Packet Tracer, network configuration, OS installation and access-point troubleshooting; the specific protocols are claimed only generically. Arguable high/mid."},
+    {"cv": "H5", "job": "HJ5", "band": "mid", "must_match": ["packet tracer", ["operating system", "os installation"]], "must_miss": ["smtp", "installation of access point"], "note": "RELABELED high->mid after seeing model reasoning: CV names no specific protocols and only mentions troubleshooting access points, while the job asks for installing them."},
     {"cv": "H6", "job": "HJ6", "band": "low", "must_match": [], "must_miss": [["itb", "invitation to bid"], ["rfq", "request for quotation"], "excel"], "note": "UNRELATED FIELD: electronics CV against a sales job; no overlap with the requirements."}
   ]
 }
